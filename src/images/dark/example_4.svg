@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="260" height="255" viewBox="0 0 260 255">
+  <defs>
+    <filter id="Rectangle_5" x="0" y="45" width="260" height="210" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="example_4" transform="translate(-1112 -69.181)">
+    <g transform="matrix(1, 0, 0, 1, 1112, 69.18)" filter="url(#Rectangle_5)">
+      <path id="Rectangle_5-2" data-name="Rectangle 5" d="M50,0H230a0,0,0,0,1,0,0V130a50,50,0,0,1-50,50H0a0,0,0,0,1,0,0V50A50,50,0,0,1,50,0Z" transform="translate(15 50)" fill="#005e87"/>
+    </g>
+    <text id="Scale" transform="translate(1160 100.181)" fill="#005e87" font-size="30" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">SCALE</tspan></text>
+    <text id="reached_in_12_months" data-name="reached in 12 months" transform="translate(1146 206.181)" fill="#fff" font-size="21" font-family="HelveticaNeue, Helvetica Neue" opacity="0.75"><tspan x="0" y="20">reached in 12 </tspan><tspan x="0" y="45">months</tspan></text>
+    <text id="_400_" data-name="400+ " transform="translate(1217 190.181)" fill="#fff" font-size="56" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="-71.288" y="0">400+ </tspan></text>
+    <text id="learners" transform="translate(1275 179.181)" fill="#fff" font-size="21" font-family="HelveticaNeue, Helvetica Neue" opacity="0.75"><tspan x="0" y="20">learners</tspan></text>
+    <path id="Rectangle_9" data-name="Rectangle 9" d="M10,0H29a0,0,0,0,1,0,0V28A10,10,0,0,1,19,38H0a0,0,0,0,1,0,0V10A10,10,0,0,1,10,0Z" transform="translate(1328 69.181)" fill="#007c8b" opacity="0.23"/>
+  </g>
+</svg>

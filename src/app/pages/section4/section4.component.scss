@@ -1,0 +1,60 @@
+@import '../../variable';
+
+
+
+.bottomcontent {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  margin-top: 20px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .tm {
+    margin-top: 150px;
+  }
+
+  .card-5 {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+
+    // margin-bottom: 50px;
+    &.mb-50 {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.ex-2 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+@include lg {
+  .grid-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@include md {
+
+  .primbox {
+    margin-bottom: 20px;
+    max-width: 220px;
+  }
+
+  .flexblock-sm {
+    display: block;
+  }
+}

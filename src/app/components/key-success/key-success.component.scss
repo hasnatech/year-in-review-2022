@@ -1,0 +1,240 @@
+@import '../../variable';
+
+.rel {
+  position: relative;
+  width: 100%;
+  //   background-color: #333;
+}
+
+.chart {
+  position: absolute;
+  width: 325px;
+  top: 75px;
+  left: 20px;
+
+  .number {
+    font-size: 26px;
+    color: #333;
+    display: flex;
+
+    img {
+      margin-right: 10px;
+    }
+
+    .num {
+      width: 50px;
+      text-align: right;
+    }
+  }
+}
+
+.progress {
+  height: 18px;
+  width: 252px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  margin-left: 0px;
+
+  .fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 18px;
+
+    border-radius: 50px;
+    background-color: $color4;
+    z-index: 2;
+
+    &.fill-1 {
+      width: 80%;
+    }
+
+    &.fill-2 {
+      background-color: $color4;
+      width: 60%;
+    }
+
+  }
+
+  .gap {
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 82%;
+    border-radius: 50px;
+    background-color: #FFF;
+    z-index: 1;
+
+    &.gap-1 {
+      width: 82%;
+    }
+
+    &.gap-2 {
+      width: 62%;
+    }
+  }
+}
+
+
+$countdown-stroke-width:3;
+$div-size: 20px;
+$circle-size: 200px;
+
+div {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+svg {
+  height: $circle-size;
+  transform: translate(0.5px, 0.5px) rotate(-90deg);
+  width: $circle-size;
+  overflow: visible !important;
+}
+
+.countdown__background {
+  fill: none;
+  stroke: #cccccc;
+  stroke-width: $countdown-stroke-width;
+
+}
+
+.countdown__progress {
+  fill: none;
+  stroke: #e77504;
+  stroke-width: $countdown-stroke-width;
+  visibility: hidden;
+}
+
+#parent {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  border-radius: 50%;
+  overflow: visible;
+}
+
+#countdown-progress-label {
+  position: relative;
+  width: $div-size;
+  height: $div-size;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 12px;
+  color: #e77504;
+  font-weight: 600;
+  left: 0;
+}
+
+#countdown-progress-label-container {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  /*(circle-height - div-height) / 2 */
+  width: auto;
+}
+
+
+#graph {
+  position: relative;
+  margin: 80px;
+  width: 220px;
+  height: 220px;
+
+  canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  span {
+    color: #555;
+    display: block;
+    line-height: 220px;
+    text-align: center;
+    width: 220px;
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 5px;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  span {}
+}
+
+.man-green {
+  background-image: url('../../../assets/images/dark/char1.png');
+  background-repeat: repeat-x;
+  width: 216px;
+}
+
+.man-blue {
+  background-image: url('../../../assets/images/dark/char2.png');
+  background-repeat: repeat-x;
+  width: 162px;
+}
+
+
+@include md {
+  .chart {
+    margin-top: -20px;
+    margin-left: -30px;
+  }
+}
+
+@include sm {
+  .progress {
+    width: 130px;
+    height: 10px;
+
+    .fill {
+      height: 10px;
+    }
+
+    .gap {
+      height: 10px;
+    }
+  }
+
+  .man-green {
+    width: 135px;
+  }
+
+  .man-blue {
+    width: 82px;
+  }
+
+  .fytext {
+    font-size: 16px;
+  }
+
+  .chart {
+    .number {
+      font-size: 20px;
+
+      .num {
+        width: 30px;
+      }
+    }
+  }
+
+  .row1 {
+    //margin-top: -20px;
+  }
+
+  .rel {
+    height: 180px;
+  }
+}

@@ -1,0 +1,61 @@
+<div class="bg-color">
+  <div class="section_panel">
+    <div class="tophead">
+      <div class="maintitle">
+        <div class="align">
+          <div class="line"></div>
+          <!-- <h2 class="h1 color" data-aos="fade-up" data-aos-duration="1000">{{data.title.text}}</h2> -->
+        </div>
+      </div>
+    </div>
+    <br>
+    <h2 class="blueheading unpadbottom">{{data.subtitle.text}}</h2>
+    <div class="flex slider_contact">
+      <!-- <div class="head" data-aos="fade-up" data-aos-duration="1000">
+       
+        <div class=" arrows" data-aos="fade-up" data-aos-duration="1000">
+          <div class="owl-nav flexarrow">
+            <div class="owl-prev" (click)="prev()">
+              <div class="l-arrow">
+                <img src="assets/images/dark/prev.png" alt="">
+              </div>
+            </div>
+            <div class="owl-next" (click)="next()">
+              <div class="r-arrow">
+                <img src="assets/images/dark/next.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <div class="slidecontent">
+        <div id="slidecontent" (mouseover)="hover(true)" (mouseout)="hover(false)">
+          <owl-carousel-o #carousel [options]="customOptions">
+            <ng-container *ngFor="let item of data.contactslides; let i = index">
+              <ng-template carouselSlide [id]="'contact_'+i">
+                <div class="panal">
+                  <div class="textcontent">
+                    <i> <span class="fi flaticon-left-quote"></span>{{item.text}}<span
+                        class="fi flaticon-right-quote"></span>
+                    </i>
+                  </div>
+                  <div class="image">
+                  </div>
+                  <div class="image_text">
+                    <div class="personimg">
+                      <img src="{{item.image.src}}">
+                    </div>
+                    <div class="details">
+                      <div class="name" [innerHtml]="item.name"></div>
+                      <div class="place fontsecondary" [innerHtml]="item.place"></div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

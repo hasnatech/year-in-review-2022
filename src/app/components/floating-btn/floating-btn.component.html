@@ -1,0 +1,8 @@
+<div class="floating">
+  <div class="top btn" (click)="goto(step-1)" [class.deactive]="step == 0">
+    <img src="assets/images/dark/up arrow.png" alt="Top Arrow">
+  </div>
+  <div class="bottom btn" (click)="goto(step+1)" [class.deactive]="step == ids.length - 1">
+    <img src="assets/images/dark/down arrow.png" alt="Top Arrow">
+  </div>
+</div>

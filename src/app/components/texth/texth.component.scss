@@ -1,0 +1,44 @@
+@import '../../variable';
+
+.mask {
+  margin-bottom: 20px;
+}
+
+.line {
+  border: 1px solid #e0e0e0;
+  margin: 0 10px;
+}
+
+.new {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.overlap {
+  overflow: hidden;
+}
+
+.letter {
+  color: $color4;
+}
+
+@include md {
+  .mask {
+    font-size: 18px;
+  }
+}
+
+
+
+.overlap:nth-child(1) {
+  .line {
+    display: none;
+  }
+}
+
+
+@include sm {
+  .mask {
+    font-size: 14px;
+  }
+}

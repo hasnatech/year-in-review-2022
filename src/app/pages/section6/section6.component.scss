@@ -1,0 +1,48 @@
+@import '../../variable';
+
+
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+
+  .whitebg_content {
+    .text {
+      padding-left: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+@include lg {
+  .primbox {
+    max-width: 220px;
+    margin-bottom: 30px;
+  }
+
+  .flexblock {
+    display: block;
+  }
+}
+
+
+@include md {
+  .flexblock-sm {
+    display: block;
+  }
+}
+
+@include sm {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
+
+  .whitebg_content {
+    img {
+      width: 150px;
+    }
+  }
+}

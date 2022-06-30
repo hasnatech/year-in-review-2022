@@ -1,0 +1,51 @@
+<div class="menu-panel">
+  <div>
+    <img src="assets/images/dark/menu_icon.png" class="menu_bar cursor" (click)="service.showmenu = true">
+  </div>
+  <div class="menu" [ngClass]="{'active': service.showmenu}">
+    <div class="menu_close">
+      <img src="assets/images/dark/white_close.png" alt="" (click)="service.showmenu = false">
+    </div>
+    <div class="menu-bgblur"></div>
+
+    <div class="menu-list">
+      <!-- {{currentActive}} -->
+      <ol>
+        <li class="text-center whitelogo"><img src="assets/images/dark/white_logo.png" alt=""></li>
+        <li class="menu_title" *ngFor="let item of service.menu; let i = index" [class.active]="currentActive == i+1"
+          (click)="onClick(i)">
+          {{item.title}}
+        </li>
+        <!--<li class="menu_title" [class.active]="currentActive == 6" (click)="onClick(5)">
+          Industry Awards
+        </li>-->
+        <!-- <li class="menu_title" [class.active]="currentActive == 2" (click)="onClick('two')">
+          Delivering Employee-Centric Learning Experiences
+        </li>
+        <li class="menu_title" [class.active]="currentActive == 3" (click)="onClick('three')">
+          Measuring My Learning Adoption and Engagement
+        </li>
+        <li class="menu_title" [class.active]="currentActive == 4" (click)="onClick('four')">
+          Built Digital Learning Capabilities Within HR and Our Businesses
+        </li>
+        <li class="menu_title" [class.active]="currentActive == 5" (click)="onClick('five')">
+          Industry Acknowledgement
+        </li> -->
+      </ol>
+      <!-- <div class="menu_title" (click)="onClick('one')">1. One L&D Governance & 3 Operating Parameters</div>
+      <div class="menu_title" (click)="onClick('two')">2. Engaged with our learners to design, market and deliver
+        learner
+        centric learning
+        experiences</div>
+      <div class="menu_title" (click)="onClick('three')">3. Measured adoption of My Learning digital learning
+        experiences
+      </div>
+      <div class="menu_title" (click)="onClick('one')">4. Built digital learning products for and capabilities within
+        L&D,
+        HR and our businesses
+      </div>
+      <div class="menu_title">5. Award</div> -->
+    </div>
+    <p class="footer">© 2021 Cargill, Incorporated. All Rights Reserved.</p>
+  </div>
+</div>

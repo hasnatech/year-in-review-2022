@@ -1,0 +1,348 @@
+
+<div class="">
+
+  <div class="space"></div>
+  <img src="assets/images/dark/divider.png" alt="" id="two" class="maximg">
+  <div class="space1"></div>
+  <div>
+    <div class="flex between-only flexblock-sm">
+      <div class="primbox">
+        <div>
+          <img src="assets/images/dark/white_mask.png" alt="">
+
+          <h3>Delivered <br>Employee-centric <br>Learning Experiences</h3>
+        </div>
+      </div>
+      <div class="bottomtab">
+        <div class="tabcontent">
+          <p class="instruction">Select each topic to know more.</p>
+
+          <div class="tab flex">
+            <!-- <div class="tab-head" (click)="selectedTab = 1" [class.active]="selectedTab == 1">
+              Voice of Learner Team
+            </div> -->
+
+            <div class="tab-head" (click)="selectedTab = 1" [class.active]="selectedTab == 1">
+              Digital Design
+            </div>
+
+            <div class="tab-head" (click)="selectedTab = 2" [class.active]="selectedTab == 2">
+              Delivery
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="">
+
+
+
+
+    <div *ngIf="activity2 == -1">
+      <div class="space"></div>
+      <div class="space"></div>
+    </div>
+
+    <div class="horizontal-scroll">
+      <div class="content2">
+        <!-- <div class="actvity2_content pd-1020" [hidden]="selectedTab != 1">
+          
+          <div class="flex fcenter flexblock whitecontent">
+
+
+
+            <div class="flex-1 relativeflex">
+              <div class="bgcolorlay"></div>
+
+              <div class="default z_1">
+                <p>Global L&D has cultivated a community of globally diverse employees, called the Voice of Learner
+                  Team
+                  (VOLT),
+                  who volunteer to help shape the
+                  Cargill learning experience. Since its inception in April 2020, VOLT has been instrumental in
+                  providing unbiased, real-time feedback on matters such as learner experience, ease of pathway
+                  navigation and Degreed functionality updates.
+                
+
+                </p>
+                <div class="card-ui z_1">
+                  <b>The Impact of VOLT in transforming learning experiences</b>
+                  <ul>
+                    <li>Simplified search functionality for required vs. assigned courses</li>
+                    <li>Enhanced overall experience of navigation & completion of pathways</li>
+                    <li>Enabled quick view of identified key learning statistics</li>
+                    <li>Renamed ‘Browse’ page to 'Featured'</li>
+                  </ul>
+                </div>
+               
+              </div>
+
+            </div>
+            <div class="volt flex-1">
+             
+              <div>As of FY’21, we have 450 VOLT members with an average of 75% member engagement</div>
+              <app-key-success></app-key-success>
+
+
+            </div>
+          </div>
+
+          <div class="card-ui card-blue default">
+            <h3 class="unpadtop"><b>Degreed’s view on VOLT:</b></h3>
+
+            <div class="quote">
+              <div>
+                <span class="fi flaticon-left-quote"></span>
+                <i>VOLT’s ability to easily mobilize a diverse group of constituents, helped us to test new
+                  functionality
+                  and
+                  provide feedback that influenced product direction, feature enablement and change management
+                  recommendations. This has helped not only Cargill but a larger set of clients and
+                  users</i>
+                <span class="fi flaticon-right-quote"></span>
+              </div>
+              
+
+            </div>
+            <p class="text-right unpadbottom">
+              – Linda Moeller, Degreed
+            </p>
+          </div>
+
+
+        </div> -->
+
+        <div class="actvity2_content tab2" [hidden]="selectedTab != 1">
+        
+          <h2 class="unpadtop">
+            Highlights of Global L&D’s digital design capabilities for FY’21
+          </h2>
+         
+          <div class="grid">
+
+            <div class="center-number" *ngFor="let item of activity2_2_data; let i = index">
+              <div class="number-title">
+                <span class="number default-color">
+                  <span class="activity2_number">{{item.number}}</span>+
+                </span><br>
+                <span class="icon_tx-col">{{item.title}}</span>
+
+              </div>
+              <div class="text-center">
+                <img class="" src="{{item.image}}" alt="">
+              </div>
+              <div class="font-small">{{item.desc}}</div>
+            </div>
+
+           
+          </div>
+         
+        </div>
+
+        <!-- <div class="actvity2_content" [hidden]="selectedTab != 3">
+        
+          <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide>
+              <div class="owl_card">
+                <div class="flex">
+                  <div class="contnent ">
+                    <div class="title">
+                      Digital Learning Champions
+                    </div>
+                    <div class="default">
+                      <p>
+                        It built a network of advocates to influence and drive engagement
+                        with the learning products and technology 382 members
+                      </p>
+                      <p>
+                        57 My Learning Mondays conducted regionally in English, Spanish,
+                        Brazilian Portuguese and Mandarin. The purpose of these sessions was
+                        to inspire employees to create their own learning pathways in <span class="oneword"> My
+                          Learning</span>
+                      </p>
+                    </div>
+                    <div class="flex nums">
+                      <div class="number activity2_number">382</div>
+                      <div class="text default">Members</div>
+                      <div class="space-r"></div>
+                      <div class="number activity2_number">57</div>
+                      <div class="text default">My Learning</div>
+                    </div>
+
+                  </div>
+                  <img class="img" src="assets/images/dark/AdobeStock_317914682.png" alt="">
+                </div>
+              </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+              <div class="owl_card">
+                <div class="flex">
+                  <div class="contnent">
+                    <div class="title">
+                      Marketing Communications & Technology
+                    </div>
+                    <div class="default">
+                      <p>
+                        It provided marketing communication solutions that are pragmatic, integrated and technology
+                        enabled.
+                      </p>
+                      <div class="example" (click)="example(1)">
+                        <div class="abs-example">
+                          Examples
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex nums">
+                      <div class="number1">24</div>
+                      <div class="text default">Banner Announcements</div>
+                      <div class="space-r"></div>
+                      <div class="number1">16</div>
+                      <div class="text default">Success Stories</div>
+                      <div class="space-r"></div>
+                      <div class="number1">11</div>
+                      <div class="text default">Learning Themes</div>
+                    </div>
+
+                  </div>
+                  <img class="img" src="assets/images/dark/marketing0.png" alt="">
+                </div>
+              </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+              <div class="owl_card">
+                <div class="flex">
+                  <div class="contnent">
+                    <div class="title">
+                      Developing Your Career
+                    </div>
+                    <div class="default">
+                      <p>
+                        Engage in the performance management cycle to show how
+                        Digital Learning fits with development conversations;
+                        and, encourage employees/leaders to access recommendations
+                        for learning.
+                      </p>
+                      <p class="bold">Pathway Links:</p>
+                      <p><a class="text_bold blue-font" target="_block"
+                          href="https://degreed.com/pathway/4dp6qxzmp7#/pathway">Developing Your Career at Cargill</a>
+                      </p>
+                      <p><a class="text_bold blue-font" target="_block"
+                          href="https://degreed.com/pathway/v9r7xml59j#/pathway">Leverage My Learning in Developing Your
+                          Career at Cargill</a></p>
+                    </div>
+                  </div>
+                  <img class="img" src="assets/images/dark/developing.png" alt="">
+                </div>
+              </div>
+            </ng-template>
+
+
+            <ng-template carouselSlide>
+              <div class="owl_card">
+                <div class="flex">
+                  <div class="contnent">
+                    <div class="title">
+                      Leading Learning
+                    </div>
+                    <div class="default">
+                      <p>
+                        Engage leaders in building a learning culture; leaders
+                        leverage simple communication/tools to engage teams in learning
+                      </p>
+                      <p class="bold">Plan Link:</p>
+                      <p><a class="text_bold blue-font" target="_block"
+                          href="https://degreed.com/plan/1769452#/">Leading
+                          Learning</a></p>
+                    </div>
+                  </div>
+                  <img class="img" src="assets/images/dark/leading.png" alt="">
+                </div>
+              </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+              <div class="owl_card">
+                <div class="flex">
+                  <div class="contnent">
+                    <div class="title">
+                      Product & Portfolio Marketing
+                    </div>
+                    <div class="default">
+                      <p>
+                        Purpose: Create and implement an approach to simplify,
+                        streamline and enable the L&D team to develop marketing for
+                        products and portfolios (e.g., Marketing Canvas, Toolkit, Success Coach)
+                      </p>
+                      <p>
+                        <a target="_block" href="assets/docs/MarketingCanvas_WLWF.pdf" class="blue-font text_bold">
+                          Marketing canvases</a>
+                        were created in partnership with L&D and business/function stakeholders
+                      </p>
+                      <div class="link_col" (click)="example(2)"> Read More</div>
+                    </div>
+                    <div class="flex nums">
+                      <div class="number1">29</div>
+                      <div class="text default">Total marketing canvases were created</div>
+                    </div>
+                  </div>
+                 
+                </div>
+              </div>
+            </ng-template>
+
+          </owl-carousel-o>
+
+          <div class="space"></div>
+          <div class="space"></div>
+          <div class="space"></div>
+        </div> -->
+
+        <div class="actvity2_content" [hidden]="selectedTab != 2">
+         
+          <h2 class="unpadtop">
+            Highlights of Global L&D’s digital delivery accomplishments for FY’21
+          </h2>
+          <div class="grid grid-6 tab4">
+            <div class="center-number" *ngFor="let item of activity2_delivery; let i = index">
+              <div class="number-title">
+                <span class="number default-color">
+                  <span class="activity2_delivery">{{item.number}}</span>{{item.symbol}}
+                </span><br>
+                <span class="icon_tx-col">{{item.title}}</span>
+              </div>
+             
+            </div>
+          </div>
+        
+          <!-- <div>
+            <app-slider-contacts *ngIf="selectedTab == 2" [data]="customer"></app-slider-contacts>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="spacer">
+   
+  </div>
+  <div id="two_2" class="">
+    <app-tabs></app-tabs>
+  </div>
+  <div class="spacer">
+   
+  </div>
+  <div id="two_2a" class="">
+    <h2 class="line_heading">L&D transformation &ndash; <span class="colortext">Horizon 2</span></h2>
+    <app-horizon></app-horizon>
+    <div class="space">
+   
+    </div>
+  </div>
+
+
+</div>

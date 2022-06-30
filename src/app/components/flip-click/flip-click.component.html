@@ -1,0 +1,17 @@
+<br>
+<div class="container">
+  <div class="card1" *ngFor="let item of cards; let i = index">
+    <div class="face face1">
+      <div class="content">
+        <img src="{{item.img}}">
+        <div class="title">
+          {{item.title}}
+        </div>
+      </div>
+    </div>
+    <div class="face face2">
+      <div class="content" [innerHtml]="item.desc">
+      </div>
+    </div>
+  </div>
+</div>

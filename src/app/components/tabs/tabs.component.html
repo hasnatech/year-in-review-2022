@@ -1,0 +1,318 @@
+<div>
+  <div class="endalign"><img src="assets/images/dark/divider.png" alt="" class="maximg"></div>
+  <div class="space1"></div>
+  <!-- <h2 class="line_heading">Examples of L&D’s employee-centric learning experiences and how businesses and functions are driving learning <br>for their employees</h2> -->
+  <h2 class="line_heading unpadtop">Highlights of <span class="colortext">L&D’s</span> employee-centric learning
+    experiences</h2>
+  <p class="blackbgtext unpadtop unpadbottom">Learning is delivered to help Cargill capabilities in the areas of
+    Leadership &
+    Management,
+    Commercial, Trading &
+    Risk Management, Innovation, DEI, Supply Chain, Business Consulting and Finance.
+  </p>
+  <div class="space"></div>
+  <p class="instruction unpadtop">Select each topic to know more.</p>
+  <div class="tab">
+    <div class="tab-head" (click)="selectedTab = 1" [class.active]="selectedTab == 1">
+      Catalyst Success Case
+    </div>
+    <div class="line" [class.hide]="selectedTab == 1 || selectedTab == 2"></div>
+    <div class="tab-head" (click)="selectedTab = 2" [class.active]="selectedTab == 2">
+      DEI (Diversity, Equity and Inclusion)
+    </div>
+    <div class="line" [class.hide]="selectedTab == 2 || selectedTab == 3"></div>
+    <div class="tab-head" (click)="selectedTab = 3" [class.active]="selectedTab == 3">
+      Commercial Excellence
+    </div>
+    <!-- <div class="line" [class.hide]="selectedTab == 3 || selectedTab == 4"></div> -->
+    <!-- <div class="tab-head" (click)="selectedTab = 4" [class.active]="selectedTab == 4">
+      Horizon 2
+    </div> -->
+  </div>
+  <div class="tab-content">
+
+    <div [hidden]="selectedTab != 1">
+      <div class="whitebg_content">
+        <p class="unpadtop">In FY’21 the last Catalyst cohort completed their learning experience which signified a
+          total of 1700
+          leaders completing Catalyst over the past 2 years. </p>
+
+        <p>The last cohort, which ran from Sept 2020 to March 2021, had 96% participants complete the course and 15%
+          completed with distinction, higher than any past cohorts. </p>
+        <!-- <ul>
+        <li>96% completion rate</li>
+        <li>68.8% Net Promoter Score</li>
+        <li>97% of learners took new action</li>
+        <li>76% observed significant change in other leaders</li>
+      </ul> -->
+
+        <!-- <div class="space"></div> -->
+        <br>
+        <div class="text-center">
+          <img src="assets/images/dark/slides-06.png" alt="" class="maximg">
+        </div>
+      </div>
+      <!-- <div class="flex">
+        <div class="flex-1">
+          <div class="text-center">
+            <img src="assets/images/sec4_i.png" alt="">
+          </div>
+        </div>
+        <div class="flex-1">
+          <div>
+            <p>The same cohort provided feedback regarding all experiences that yielded: </p>
+            <ul class="spacing">
+              <li>Net promoter score of 68.8</li>
+              <li>Overall satisfaction score = 4 (on a scale of 1=Poor, 5 = Excellent) </li>
+              <li>Overall relevance of the program to the participant’s job = 4.5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="space"></div>
+      <p class="sub-title">From the Success Case</p>
+      <ul class="pb">
+        <li>97% of participants took new action as a result of participating in Catalyst​ </li>
+        <li>76% observed significant change in other leaders​ </li>
+        <li>75% reported one or more positive results as an outcome of applying their Catalyst learning​</li>
+      </ul>
+      <div class="text-center">
+        <img src="assets/images/three.png" alt="">
+      </div> -->
+
+      <!-- <div class="space"></div> -->
+      <app-testimonial [data]="customer"></app-testimonial>
+    </div>
+
+    <div [hidden]="selectedTab != 2">
+
+      <div class="whitebg_content">
+        <p class="unpadtop">Collaborative Learning – Unconscious Bias learning experience</p>
+        <!-- <ul>
+        <li>English – Enrollments = 1,129 | Completions = 862</li>
+        <li>Mandarin – Enrollments = 252 | Completions = 184</li>
+        <li>Portuguese – Enrollments = 240 | Completions = 142</li>
+        <li>Spanish – Enrollments = 714 | Completions = 471</li>
+        <li>NPS = 65.9%</li>
+        <li>I learned valuable information about the different types of bias</li>
+        <li>N=1,037 | %1 = .30% | %2 = .20% | %3 = 1.32% | %4 = 18.17% | %5 = 80%</li>
+        <li>Mean = 4.41</li>
+      </ul> -->
+
+        <div class="text-center">
+          <img src="assets/images/dark/icon-g-08.png" alt="" class="maximg">
+        </div>
+      </div>
+      <div class="space1"></div>
+      <h2 class="line_heading unpadbottom unpadtop"><span class="colortext">Pathways and Plans</span> created in FY’21
+        include:</h2>
+      <div class="grid">
+        <div class="box">
+          <a target="_block" class="link_a" href="https://degreed.com/pathway/43pmj6nzpn#/pathway">
+            <div class="img"><img src="assets/images/dark/additional_resource1.png" alt="">
+              <div class="overlay"></div>
+            </div>
+            <div class="txt">Inclusive Teams</div>
+          </a>
+        </div>
+        <div class="box">
+          <a target="_block" class="link_a" href="https://degreed.com/pathway/w7pvnly18r#/pathway">
+            <div class="img"><img src="assets/images/dark/additional_resource2.png" alt="">
+              <div class="overlay"></div>
+            </div>
+            <div class="txt">Microaggressions</div>
+          </a>
+        </div>
+        <div class="box">
+          <a target="_block" class="link_a" href="https://degreed.com/pathway/49ezxvgw95#/pathway">
+            <div class="img"><img src="assets/images/dark/additional_resource3.png" alt="">
+              <div class="overlay"></div>
+            </div>
+            <div class="txt">Allyship</div>
+          </a>
+        </div>
+        <div class="box">
+          <a target="_block" class="link_a" href="https://degreed.com/pathway/zo84wvdlp4#/pathway">
+            <div class="img"><img src="assets/images/dark/additional_resource4.png" alt="">
+              <div class="overlay"></div>
+            </div>
+            <div class="txt">Inclusive Hiring for Managers</div>
+          </a>
+        </div>
+        <div class="box">
+          <a target="_block" class="link_a" href="https://degreed.com/pathway/v08g56dk8w#/pathway">
+            <div class="img"><img src="assets/images/dark/additional_resource5.png" alt="">
+              <div class="overlay"></div>
+            </div>
+            <div class="txt">Self-guided Unconscious Bias</div>
+          </a>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <div [hidden]="selectedTab != 3">
+
+
+      <!-- <div class="video-panel">
+        <div class="flex-1 left">
+          <div class="play-btn">
+            <a href="https://web.microsoftstream.com/video/5f4d0bb8-8789-487c-91f4-dee74de98d9c" target="_blank">
+              <img src="assets/images/play.svg" alt="">
+            </a>
+          </div>
+          <div class="main-img">
+            <img src="assets/images/video_panel_1.png" alt="">
+          </div>
+        </div>
+        <div class="flex-1 right">
+          <div>
+            <p>In FY’21, significant L&D investments were made for the Commercial Excellence job family including
+              development experiences focused on the Global Sales Competency Model, Strategic Pricing, Sales
+              Negotiations,
+              Commercial Excellence Capabilities and Strategic Marketing Foundations. </p>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="text-center whitebg_content">
+        <div class="flex justifycenter flexblock-sm">
+          <div>
+            <img class="corner maximg" src="assets/images/dark/icons1.png" alt="">
+          </div>
+          <div class="icon_click">
+            <img class="corner maximg" src="assets/images/dark/icons2.png" alt="">
+            <div class="button">
+              <a href="https://web.microsoftstream.com/video/5f4d0bb8-8789-487c-91f4-dee74de98d9c" target="_blank">
+                View More
+              </a>
+            </div>
+          </div>
+          <div>
+            <img class="corner maximg" src="assets/images/dark/icons3.png" alt="">
+          </div>
+        </div>
+        <!-- <img class="corner" src="assets/images/sec4_31.png" alt=""> -->
+      </div>
+
+
+    </div>
+
+    <div [hidden]="selectedTab != 4">
+
+      <app-horizon></app-horizon>
+
+
+
+      <!-- <p>Now that we’ve built L&D and HR’s digital capabilities including a new modern technology eco-system and
+        stewardship of the Cargill L&D governance, we began focusing on Horizon 2. Our next horizon is to build the
+        business’ digital learning capabilities. </p>
+      <div class="text-center">
+        <img class="corner shadow" src="assets/images/3Horizons_Detailed.png" alt="">
+      </div>
+      <ol class="spacing">
+        <li>We want to equip businesses and functions to own their own learning.</li>
+        <li>We want them to be able to use the technology and resources for customer facing education.</li>
+
+      </ol>
+      <p>
+        Below are 5 examples of where we’ve enabled the functions and business to manage the design,
+        development and implementation of learning for themselves. The ability to curate content and deploy
+        directly to their targeted audience has tremendous impact on speed and efficiency for the organization.
+      </p>
+      <div class="grid-35">
+        <div class="box">
+          <div>
+            1. <a class="white_font" target="_block" href="assets/docs/CaseStudy_CBS-ActiveLearnerGoal.pdf">CBS
+              Example</a>
+          </div>
+        </div>
+        <div class="box">
+          <div>
+            2. <a class="white_font" target="_block" href="assets/docs/CaseStudy_FIBI-HumanCapitalLearningGoal.pdf">FIBI
+              Example</a>
+          </div>
+        </div>
+        <div class="box box-3">
+          <div>
+            3. F&O college conducted Curation Hackathons with several functions
+            <ul>
+              <li>L&D F&O College hosted 6 workshops with 18 Global Operations SMEs to curate 550+ content items
+                across
+                126 plans and pathways, which in only a few months has already netted 450 followers. </li>
+              <li>L&D F&O College hosted 8 curation sessions with 47 CBS SMEs to curate 700+ content items across 27
+                plans
+                and pathways, which has more than 1,000 learners currently following it. </li>
+            </ul>
+          </div>
+        </div>
+        <div class="box box-full">
+          <div>
+            <div class="flex fcenter">
+              <div class="mr">
+                <h2 class="title">4. Protein NA GSCM example</h2>
+                <p>A big part of Protein NA’s journey is making sure they have the training they need to be
+                  successful.
+                  Protein
+                  NA’s small Sales Enablement team is creating new & enabling existing trainings to be available in
+                  an
+                  effective
+                  and convenient manner. This has been possible with the My Learning platform. We have set up a
+                  Protein
+                  Training
+                  Hub. We have designed plans by channel and paths within each, focused on each product line &
+                  business
+                  segment.
+                  We are focused on user experience, reduced number of clicks within a straightforward navigation to
+                  find
+                  what
+                  the learner needs. This is also the backbone of our on-boarding strategy. We are continually
+                  learning
+                  new
+                  options within this platform but are working to embrace all it has to offer. We will continue to
+                  always
+                  add
+                  new content and relevant plans, but we will be formally announcing the Training Hub to all of
+                  Protein,
+                  with
+                  emphasis on the Commercial teams by the beginning of June 2021.</p>
+                <p>Click <a class="white" href="https://degreed.com/plan/1698986#/" target="_blank">here</a> to view
+                  the
+                  pathway</p>
+              </div>
+              <div>
+                <a href="https://degreed.com/plan/1698986#/" target="_blank">
+                  <img class="round-border" src="assets/images/protein.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box box-full">
+          <div class="flex fcenter">
+            <div class="mr">
+              <a href="https://degreed.com/pathway/m90j433v86?path=sustainability-in-cargill" target="_blank">
+                <img class="round-border" src="assets/images/sustainability.png" alt="">
+              </a>
+            </div>
+            <div>
+              <h2 class="title">5. Sustainability at Cargill pathway </h2>
+              <p>This learning pathway, created solely by the CASC and GEOS EMEA business, provides a general
+                overview
+                of
+                what sustainability means at Cargill and at CASC and GEOS EMEA. Through videos and articles from
+                internal
+                and external sources, you will learn what Cargill sustainability priorities and commitments are,
+                what
+                challenges and opportunities our business faces, and how to tell our sustainability story.</p>
+              <p>Click <a class="white" href="https://degreed.com/pathway/m90j433v86?path=sustainability-in-cargill"
+                  target="_blank">here</a> to view the
+                pathway</p>
+            </div>
+
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

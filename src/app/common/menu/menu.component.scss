@@ -1,0 +1,150 @@
+@import '../../variable';
+
+.menu-panel {
+  position: fixed;
+  z-index: 998;
+  left: 0;
+  top: 0;
+
+}
+
+.footer {
+  font-size: 14px;
+  position: relative;
+  z-index: 10;
+  padding: 20px;
+  padding-right: 10px;
+  margin-top: -30px;
+}
+
+.menu {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 270px;
+  // border-radius: 20px 0 0 20px;
+  overflow: auto;
+  color: #FFF;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+
+  background-color: #333;
+
+  .menu-bgblur {
+    position: absolute;
+    z-index: 1;
+    background-color: #333;
+    backdrop-filter: blur(5px);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .menu-list,
+  .menu_close {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .menu_close {
+    display: none;
+  }
+
+  &.active {
+    transform: translateY(0);
+  }
+}
+
+.menu_bar {
+  margin: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #333;
+
+}
+
+.whitelogo {
+  img {
+    width: 100px;
+  }
+}
+
+.menu_title {
+
+  font-size: 15px;
+  font-weight: lighter;
+  //font-family: HelveticaNeueLight;
+  //font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+  color: #fff;
+  margin-top: -35px;
+  padding: 50px;
+  padding-right: 5px;
+  padding-left: 50px;
+  width: 210px;
+  max-height: 20px;
+  min-height: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+
+
+
+  &:hover,
+  &.active {
+    opacity: 1;
+    background-image: url('../../../assets/images/dark/menu_active_bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+.menu_title:nth-child(2) {
+  margin-top: -20px;
+}
+
+.menu_close {
+  text-align: right;
+  font-size: 2rem;
+  padding-right: 20px;
+  padding-top: 20px;
+  cursor: pointer;
+
+}
+
+@include xl {
+  .menu_close {
+    padding-top: 5px;
+    display: block !important;
+  }
+
+  .menu_title {
+    margin-top: -45px;
+  }
+
+}
+
+@include lg {
+
+
+  .menu_title {
+    // margin: 16px 50px;
+  }
+}
+
+ol {
+  li {
+    list-style: none;
+  }
+}

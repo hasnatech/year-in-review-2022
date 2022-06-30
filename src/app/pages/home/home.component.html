@@ -1,0 +1,54 @@
+<div id="home">
+  <div class="menu">
+    <app-menu></app-menu>
+  </div>
+  <!--<app-floating-btn></app-floating-btn>-->
+  <div class="dark_bg" [ngClass]="{'left_dark_bg' : service.showmenu == true , 'radhome' : service.showmenu == true}"
+    id="one">
+
+    <div class="home-11">
+      <div class="flex flexblock bgtitlepanel">
+        <div class=" flex flexblock">
+          <div class="bg_cont">
+            <div class="bgtext flex-1">
+              <h1>Global Learning <span class="nowrap">& Development</span></h1>
+
+              <div class="text-center font-l">- Highlights of FY'21 - </div>
+            </div>
+          </div>
+
+          <div class="flex-1 rightflex">
+
+            <h2>Three years of transforming learning at Cargill</h2>
+            <app-texth></app-texth>
+            <div class="button">
+              <button class="primary-btn" (click)="onClick('first')">Let’s explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="mouse-wheel">
+        <app-mouse-scroll></app-mouse-scroll>
+      </div>-->
+    </div>
+
+    <div class="section full-screen ">
+      <app-section2></app-section2>
+    </div>
+
+    <div class="full-screen">
+      <app-section3></app-section3>
+    </div>
+
+    <div class="section full-screen">
+      <app-section4></app-section4>
+    </div>
+    <div class="section full-screen">
+      <app-section5></app-section5>
+    </div>
+    <div class="section full-screen">
+      <app-section6></app-section6>
+    </div>
+  </div>
+</div>

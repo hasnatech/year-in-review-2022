@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="312" height="342" viewBox="0 0 312 342">
+  <defs>
+    <filter id="Rectangle_1" x="0" y="71" width="312" height="271" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="example_1" transform="translate(-89 -26)">
+    <g transform="matrix(1, 0, 0, 1, 89, 26)" filter="url(#Rectangle_1)">
+      <path id="Rectangle_1-2" data-name="Rectangle 1" d="M50,0H282a0,0,0,0,1,0,0V191a50,50,0,0,1-50,50H0a0,0,0,0,1,0,0V50A50,50,0,0,1,50,0Z" transform="translate(15 76)" fill="#005e87"/>
+    </g>
+    <text id="Reduction_in_cost_from_" data-name="Reduction in cost from " transform="translate(135 136)" fill="#fff" font-size="21" font-family="HelveticaNeue, Helvetica Neue" opacity="0.75"><tspan x="0" y="20">Reduction in cost from </tspan></text>
+    <text id="Efficiency" transform="translate(146 79)" fill="#005e87" font-size="33" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">EFFICIENCY</tspan></text>
+    <text id="_10" data-name="$10" transform="translate(232 310)" fill="#fff" font-size="62" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="-51.708" y="0">$10</tspan></text>
+    <text id="_person" data-name="/person" transform="translate(285 287)" fill="#fff" font-size="21" font-family="HelveticaNeue, Helvetica Neue" opacity="0.75"><tspan x="0" y="20">/person</tspan></text>
+    <path id="Rectangle_14" data-name="Rectangle 14" d="M10,0H32a0,0,0,0,1,0,0V32A10,10,0,0,1,22,42H0a0,0,0,0,1,0,0V10A10,10,0,0,1,10,0Z" transform="translate(360 26)" fill="#519136" opacity="0.23"/>
+    <text id="_2_000" data-name="$2,000" transform="translate(135 205)" fill="#fff" font-size="43" font-family="HelveticaNeueLTPro-Bd, Helvetica Neue LT Pro"><tspan x="0" y="0">$2,000</tspan></text>
+    <text id="_person-2" data-name="/person" transform="translate(274 204)" fill="#fff" font-size="21" font-family="HelveticaNeue, Helvetica Neue" opacity="0.75"><tspan x="0" y="0">/person</tspan></text>
+    <text id="_to" data-name=" to" transform="translate(158 248)" fill="#fff" font-size="31" font-family="HelveticaNeue, Helvetica Neue" opacity="0.75"><tspan x="0" y="0" xml:space="preserve"> to</tspan></text>
+  </g>
+</svg>
