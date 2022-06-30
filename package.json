@@ -8,9 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "upload": "ng build --prod --base-href ./",
-    "predeploy": "ng build --prod --base-href https://hasnatech.github.io/year-in-review-2022/",
-    "deploy": "gh-pages -d dist/year-in-review-2022"
+    "git": "git add . && git commit -m 'update' && git push",
+    "predeploy": "ng build --configuration production --base-href https://hasnatech.github.io/year-in-review-2022/",
+    "deploy": "gh-pages -d dist/year-in-review-2022",
+    "upload": "ng build --configuration production --base-href ./"
   },
   "private": true,
   "dependencies": {
